@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy 18th Birthday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="page active" id="page1">
+<h1>Welcome</h1>
+<button onclick="showPage(2)">Next →</button>
+</section>
+
+<section class="page" id="page2">
+<h2>Clarification of Identity</h2>
+<input id="name" placeholder="Your Name">
+<input id="age" type="number" placeholder="Current Age">
+<p id="warning"></p>
+<button onclick="validateAge()">Submit</button>
+</section>
+
+<section class="page" id="page3">
+<h2>Can we proceed to your gifts?</h2>
+<button onclick="showPage(4)">Proceed</button>
+</section>
+
+<section class="page" id="page4">
+<div class="letter">
+<h2>Dear Buddy,</h2>
+<p>Happy 18th Birthday! Today isn't just another birthday—it's the beginning of a brand-new chapter in your life. Be responsible. Be brave. Be kind. And most importantly, always stay true to yourself. Happy 18th Birthday once again, buddy ❤️</p>
+</div>
+<button onclick="showPage(5)">Continue</button>
+</section>
+
+<section class="page" id="page5">
+<h2>Memories</h2>
+<img id="gallery" src="" alt="photo">
+<div>
+<button onclick="prevPhoto()">⬅</button>
+<button onclick="nextPhoto()">➡</button>
+</div>
+<button onclick="showPage(6)">Grand Finale</button>
+</section>
+
+<section class="page" id="page6">
+<h1>🎂 Happy 18th Birthday 🎂</h1>
+<div id="cake">🎂</div>
+<audio id="music" loop>
+<source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+<button onclick="blowCandles()">Blow The Candles</button>
+<div id="finalMessage">
+This is a new beginning...<br>
+A new chapter...<br><br>
+All the good things will happen to you.<br>
+You are adult now... a man.<br>
+Happy 18th Birthday Buddy ❤️<br><br>
+With lots of faith and care,<br>
+Your Friend
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
